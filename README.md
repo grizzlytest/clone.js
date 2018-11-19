@@ -25,17 +25,22 @@ This function is very really fast compared to using clone and detach and, has th
 # Jquery Example of usage -> HTML demo will follow
 ```javascript
 $(document).ready(function(){
-  var elementString = prepareDOM('append', '.task-creator');
-
-
-  $('input[name="total_tasks"]').mousewheel(function() {
+  // Create string from DOM element and remove it
+  var elementString = prepareDOM('parentContainerId', '.child-node-class');
+  // Input number on mousewheel
+  $('input[name="input_number"]').mousewheel(function() {
+      // Trigger change
       $(this).trigger('change');
   });
-  $('input[name="total_tasks"]').on('keyup',function() {
+  // Input number on key up
+  $('input[name="input_number"]').on('keyup',function() {
+      // Trigger change
       $(this).trigger('change');
   });
-  $('input[name="total_tasks"]').on('change', function () {
-      cloneElements('append', elementString, this.value);
-  }).trigger('change');
+  // On input number value change
+  $('input[name="input_number"]').on('change', function () {
+      // Clone elements
+      cloneElements('parentContainerId', elementString, this.value);
+  }).trigger('change');       // Not really sure if this trigger is necessary, just here for consistency
 });
 ```
