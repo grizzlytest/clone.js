@@ -20,3 +20,22 @@ This function is very really fast compared to using clone and detach and, has th
 
 - Better commenting, made this in 20 minutes
 - Better explanation in the comments about the functions
+
+
+# Jquery Example of usage -> HTML demo will follow
+```javascript
+$(document).ready(function(){
+  var elementString = prepareDOM('append', '.task-creator');
+
+
+  $('input[name="total_tasks"]').mousewheel(function() {
+      $(this).trigger('change');
+  });
+  $('input[name="total_tasks"]').on('keyup',function() {
+      $(this).trigger('change');
+  });
+  $('input[name="total_tasks"]').on('change', function () {
+      cloneElements('append', elementString, this.value);
+  }).trigger('change');
+});
+```
