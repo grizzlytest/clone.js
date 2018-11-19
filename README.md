@@ -33,7 +33,7 @@ $(document).ready(function(){
       $(this).trigger('change');
   });
   // Input number on key up
-  $('input[name="input_number"]').on('keyup',function() {
+  $('input[name="input_number"]').on('keyup', function() {
       // Trigger change
       $(this).trigger('change');
   });
