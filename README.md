@@ -14,7 +14,7 @@ This function is very really fast compared to using clone and detach and, has th
 # Features that need to be added
 
 - Good readme
-- Example file
+- Example file(s)
 
 # Things to improve:
 
@@ -22,7 +22,7 @@ This function is very really fast compared to using clone and detach and, has th
 - Better explanation in the comments about the functions
 
 
-# Example jQuery usage -> (HTML demo will follow)
+# Example jQuery usage
 ```html
 <input type="number" name="input_number">
 
