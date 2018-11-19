@@ -22,7 +22,7 @@ This function is very really fast compared to using clone and detach and, has th
 - Better explanation in the comments about the functions
 
 
-# Jquery Example of usage -> HTML demo will follow
+# Example jQuery usage -> (HTML demo will follow)
 ```javascript
 $(document).ready(function(){
   // Create string from DOM element and remove it
@@ -41,6 +41,6 @@ $(document).ready(function(){
   $('input[name="input_number"]').on('change', function () {
       // Clone elements
       cloneElements('parentContainerId', elementString, this.value);
-  }).trigger('change');       // Not really sure if this trigger is necessary, just here for consistency
+  });
 });
 ```
