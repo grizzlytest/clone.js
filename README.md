@@ -56,6 +56,6 @@ $(document).ready(function(){
   $('input[name="input_number"]').on('change', function () {
       // Clone elements
       cloneElements('parentContainerId', elementString, this.value);
-  });
+  }).trigger('change'); // This is needed to trigger the value on load of the document
 });
 ```
