@@ -22,7 +22,7 @@ This function is very really fast compared to using clone and detach and, has th
 - Better explanation in the comments about the functions
 
 
-# Example jQuery usage
+# Example usage
 ```html
 <input type="number" name="input_number">
 
@@ -35,6 +35,8 @@ This function is very really fast compared to using clone and detach and, has th
   </div>
 </div>
 ```
+
+# jQuery
 
 ```javascript
 $(document).ready(function(){
