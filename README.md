@@ -23,6 +23,19 @@ This function is very really fast compared to using clone and detach and, has th
 
 
 # Example jQuery usage -> (HTML demo will follow)
+```html
+<input type="number" name="input_number">
+
+<div id="parentContainerId">
+  <div class="child-node-class">
+    <input type="text" name="firstname[]">
+    <input type="text" name="lastname[]">
+    <input type="text" name="age[]">
+    <input type="text" name="email[]">
+  </div>
+</div>
+```
+
 ```javascript
 $(document).ready(function(){
   // Create string from DOM element and remove it
