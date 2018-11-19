@@ -2,10 +2,7 @@
 
 Hi everyone who sees this,
 
-I created this really fast during work, because we needed a function that was very fast at copying large dom elements within a container. 
-Mainly input fields, but it was very slow using jquery for this. 
-
-We needed something that was reasonably on the fly without any lag, so with some digging using my minor javascript skills I created this. 
+We needed a function that was very fast at copying large dom elements within a container. So I decided to create this really fast during worktime. 
 
 The way this function works is with a container and a preset element we need to copy. The preset element will be copied and converted to a string with the function .outerHTML. After that the container will be emptied. Finally after emptying the container we set a value within our eventhandler and then we fill the container with the outerHTML of the child node within that container. 
 
